@@ -282,7 +282,7 @@ async def howgay_error(interaction: discord.Interaction, error):
     if isinstance(error, commands.MissingRequiredArgument):
         embed = discord.Embed(colour=discord.Colour.red())
         embed.add_field(name=':x: **Howgay Error**\n', value=' ㅤ\n``.howgay {mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await interaction.response.send_message(embed=embed)
 
@@ -345,7 +345,7 @@ async def dox(interaction: discord.Interaction, *, user: discord.Member):
 
     embed.add_field(name=f':skull_crossbones: Doxxed {user} successfully\n  ㅤ', value=f"""{user} IP: **192.{random.choice(responses1)}.{random.choice(responses2)}**\n {user} country: **{random.choice(countries)}**\n{user} Computer: **{random.choice(computer)}**""", inline=False)
     embed.add_field(name='  ㅤ', value='  ㅤ\nNOTE- This information is REAL, Unless they VPN user!', inline=True)
-    embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+    embed.set_footer(text='© TECHGUIN')
     embed.set_image(url="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJwd2VjZXlia3dya25yNnVqdnVkZ3hsYnR4NDlzMXF4ODIxOWc3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Z3VgQu8hkVeB1bakS9/giphy.gif")
 
     await interaction.response.send_message(embed=embed)
@@ -355,7 +355,7 @@ async def dox_error(interaction: discord.Interaction, error):
     if isinstance(error, commands.MissingRequiredArgument):
         embed = discord.Embed(colour= discord.Colour.red())
         embed.add_field(name=':x: **Dox Error**\n', value=' ㅤ\n``.dox {@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await interaction.response.send_message(embed = embed)
 
@@ -373,7 +373,7 @@ async def _8ball (ctx, *, user: discord.Member, question):
                  'fuck yeah',
                  'idk']
     embed.add_field(name=f'The question: {question}', value=f'\n\n**Answer: {random.choice(responses)}**', inline=False)
-    embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+    embed.set_footer(text='© TECHGUIN')
 
     await ctx.send(embed=embed)
 
@@ -382,7 +382,7 @@ async def _8ball_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         embed = discord.Embed(colour= discord.Colour.red())
         embed.add_field(name=':x: **Ball Error**\n', value=' ㅤ\n``.ball {question}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed = embed)
 
@@ -400,7 +400,7 @@ async def purge_error(ctx, error):
     embed = discord.Embed(colour=discord.Colour.red())
     if isinstance(error, commands.MissingRequiredArgument):
         embed.add_field(name=':x: **Purge Error**\n', value=' ㅤ\n``.purge {amount}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
 # Kick member
 
@@ -547,7 +547,7 @@ async def mute_error(ctx, error):
     embed = discord.Embed(colour=discord.Colour.red())
     if isinstance(error, commands.MissingRequiredArgument):
         embed.add_field(name=':x: **Mute Error**\n', value=' ㅤ\n``.mute {@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -559,7 +559,7 @@ async def unmute(ctx, user:discord.Member):
     role = discord.utils.get(user.guild.roles, name='Muted')
     await user.remove_roles(role)
     embed.description = f':loud_sound: **Unmute**\n ㅤ\nI Unmuted {user}'
-    embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+    embed.set_footer(text='© TECHGUIN')
 
     await ctx.send(embed=embed)
 
@@ -568,7 +568,7 @@ async def unmute_error(ctx, error):
     embed = discord.Embed(colour=discord.Colour.red())
     if isinstance(error, commands.MissingRequiredArgument):
         embed.add_field(name=':x: **Unmute Error**\n', value=' ㅤ\n``.unmute {@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -578,7 +578,7 @@ async def unmute_error(ctx, error):
 async def say(ctx, *, say):
     embed= discord.Embed(colour=discord.Colour.green())
     embed.description = f"{say}"
-    embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+    embed.set_footer(text='© TECHGUIN')
 
     await ctx.send(embed=embed)
 
@@ -587,7 +587,7 @@ async def say_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         embed = discord.Embed(colour=discord.Colour.red())
         embed.add_field(name=':x: **Say Error**\n', value=' ㅤ\n``.say {something}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -630,7 +630,7 @@ async def addrole_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         embed = discord.Embed(colour=discord.Colour.red())
         embed.add_field(name=':x: **Addrole Error**\n', value=' ㅤ\n``.addrole {@role}+{@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -648,7 +648,7 @@ async def removerole_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         embed = discord.Embed(colour=discord.Colour.red())
         embed.add_field(name=':x: **Removerole Error**\n', value=' ㅤ\n``.removerole {@role}+{@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -668,7 +668,7 @@ async def verify_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         embed = discord.Embed(colour=discord.Colour.red())
         embed.add_field(name=':x: **Verify Error**\n', value=' ㅤ\n``.verify {@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -703,7 +703,7 @@ async def warn_error(ctx, error):
     embed = discord.Embed(colour=discord.Colour.red())
     if isinstance(error, commands.MissingRequiredArgument):
         embed.add_field(name=':x: **Warn Error**\n', value=' ㅤ\n``.warn {@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -733,7 +733,7 @@ async def unwarn_error(ctx, error):
     embed = discord.Embed(colour=discord.Colour.red())
     if isinstance(error, commands.MissingRequiredArgument):
         embed.add_field(name=':x: **Unwarn Error**\n', value=' ㅤ\n``.unwarn {@mention}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
@@ -782,7 +782,7 @@ async def ticket_error(ctx, error):
     embed = discord.Embed(colour=discord.Colour.red())
     if isinstance(error, commands.MissingRequiredArgument):
         embed.add_field(name=':x: **Ticket Error**\n', value=' ㅤ\n``.ticket {Reason/Subject}``', inline=False)
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
 
