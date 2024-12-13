@@ -188,7 +188,7 @@ async def setup(ctx):
         await guild.create_role(name='Support Team', permissions=support_perms)
         await ctx.guild.create_category('tickets')
         embed.description= """I created ``Support Team`` role for my ticket system.\nI created ``TICKETS`` category for my ticket system."""
-        embed.set_footer(text='© TECHGUIN - Made By Kianz0 and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
     else:
@@ -202,7 +202,7 @@ async def setup(ctx):
         mute_perms = discord.Permissions(send_messages=False, read_messages=True)
         await guild.create_role(name='Muted', permissions=mute_perms)
         embed.description='I created ``Muted`` role for my mute system.'
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
     else:
@@ -227,7 +227,7 @@ async def setup(ctx):
                                       send_messages=False)
         await channel.send("**``.verify {@user}`` To verify yourself and get access to all server channels!**\n\n @everyone")
         embed.description= 'I created my verification system.'
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
     else:
@@ -242,7 +242,7 @@ async def setup(ctx):
         await guild.create_role(name='warn2')
         await guild.create_role(name='warn3')
         embed.description= 'I created my warning system.'
-        embed.set_footer(text='© TECHGUIN - Made By Kianz and Techguin')
+        embed.set_footer(text='© TECHGUIN')
 
         await ctx.send(embed=embed)
     else:
@@ -273,7 +273,7 @@ async def howgay(interaction: discord.Interaction, person: discord.Member):
                  '0%',
                  '1%']
     embed.description = f'**{person.name} is {random.choice(responses)} gay** :rainbow:'
-    embed.set_footer(text='© Techguin - Made By Kianz and Techguin')
+    embed.set_footer(text='© Techguin')
 
     await interaction.response.send_message(embed=embed)
 
