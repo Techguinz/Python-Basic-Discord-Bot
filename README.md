@@ -1,4 +1,4 @@
-So you will need to get the following libraiies shown in the imports:
+Heres some stuff you need to install for the discord bot to work
 
 pip install feedparser
 pip intall asynico
